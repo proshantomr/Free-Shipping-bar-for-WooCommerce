@@ -1,0 +1,66 @@
+.text-input{
+    width: 500px;
+}
+
+
+@keyframes slide-left {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slide-right {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slide-up {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes slide-down {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.slide-left {
+    animation: slide-left 1s ease-in-out;
+}
+
+.slide-right {
+    animation: slide-right 1s ease-in-out;
+}
+
+.slide-up {
+    animation: slide-up 1s ease-in-out;
+}
+
+.slide-down {
+    animation: slide-down 1s ease-in-out;
+}
+
+
+
+#fsb-bar {
+    position: relative;
+    padding-left: 40px; /* Space for the close button */
+}
+
+#fsb-close-btn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#fsb-bar .dashicons {
+    margin-left: 30px; /* Ensure icon and text are spaced correctly */
+}
+
+
+
+
